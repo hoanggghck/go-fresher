@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
+import "github.com/hoanggghck/go-fresher/internal/router"
 
 func main() {
-	fmt.Printf("Hello")
+	r := router.NewRouter()
+
+	r.Run(":8002") // listen and serve on 0.0.0.0:8080 (for windows "localhost:8080")
 }
